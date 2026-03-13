@@ -69,7 +69,7 @@ def _load_certificate(pem: str) -> x509.Certificate:
         with warnings.catch_warnings():
             # Ruby hiera-eyaml generates certs with serial=0, violating RFC 5280.
             # This is harmless for PKCS7 envelope encryption — suppress the warning.
-            warnings.filterwarnings("ignore", message=".*serial number.*", category=DeprecationWarning)
+            warnings.filterwarnings("ignore", message=".*serial number.*", category=UserWarning)
             return x509.load_pem_x509_certificate(pem_bytes)
 
     if b"BEGIN PUBLIC KEY" in pem_bytes:
