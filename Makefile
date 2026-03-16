@@ -1,4 +1,4 @@
-.PHONY: test lint typecheck fmt check
+.PHONY: test lint typecheck fmt check build
 
 test:
 	uv run pytest tests/ -v
@@ -13,3 +13,6 @@ fmt:
 	uv run ruff format src/ tests/
 
 check: lint typecheck test
+
+build:
+	uv build

@@ -3,13 +3,32 @@ name = "hiera-eyaml"
 version = "0.1.0"
 description = "Python library for encrypting and decrypting hiera-eyaml YAML files"
 readme = "README.md"
+license = { text = "MIT" }
 authors = [
     { name = "Bernardo Vale", email = "bernardo@kentik.com" }
+]
+keywords = ["hiera", "eyaml", "puppet", "encryption", "pkcs7", "yaml"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Systems Administration",
+    "Typing :: Typed",
 ]
 requires-python = ">=3.13"
 dependencies = [
     "cryptography>=44.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/bernardovale/hiera-eyaml-python"
+Repository = "https://github.com/bernardovale/hiera-eyaml-python"
+Issues = "https://github.com/bernardovale/hiera-eyaml-python/issues"
 
 [dependency-groups]
 dev = [
