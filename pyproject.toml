@@ -1,6 +1,6 @@
 [project]
 name = "hiera-eyaml"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python library for encrypting and decrypting hiera-eyaml YAML files"
 readme = "README.md"
 license = { text = "MIT" }
@@ -20,7 +20,7 @@ classifiers = [
     "Topic :: System :: Systems Administration",
     "Typing :: Typed",
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "cryptography>=44.0.0",
 ]
